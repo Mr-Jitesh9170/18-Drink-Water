@@ -1,0 +1,82 @@
+.drink-water-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: steelblue;
+  align-items: center;
+  .drink-water-top {
+    width: 30%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 50%;
+    .limit {
+      font-size: 23px;
+      font-weight: 700;
+      color: rgb(57, 8, 117);
+    }
+    .goal {
+      color: rgba(255, 255, 255, 0.453);
+    }
+    .water-glass {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      width: 40%;
+      height: 90%;
+      border-bottom-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border: 2px solid black;
+      background-color: rgba(167, 205, 237, 0.508);
+      .water-line {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: steelblue;
+        div {
+          margin-top: 10px;
+          font-size: 17px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .drink-water-bottom {
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      text-align: center;
+      font-weight: 600;
+    }
+    .selected-water-glass {
+      cursor: pointer;
+      width: 60%;
+      height: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      .small-glasses {
+        background-color: yellow;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        width: 12%;
+        text-align: center;
+        height: 32%;
+        padding: 5px 8px;
+        border: 2px solid black;
+        &:active {
+          scale: 0.98;
+        }
+      }
+    }
+  }
+}
